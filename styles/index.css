@@ -6,6 +6,10 @@ body{
     background-color: aliceblue;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 .carousel-caption.fade-up {
   opacity: 0;
   transform: translateY(50px);
