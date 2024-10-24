@@ -5,6 +5,9 @@ body{
     font-family: 'Oswald', sans-serif;
     background-color: aliceblue;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar{
   display: none;
