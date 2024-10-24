@@ -5,6 +5,28 @@ body{
     font-family: 'Oswald', sans-serif;
     background-color: aliceblue;
 }
+
+.carousel-caption.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.carousel-item.active .carousel-caption.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  animation: LeftTORight 0.5s ease-in-out;
+}
+@keyframes LeftTORight {
+  0% {
+      transform: translateX(-100%);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
 .navbar{
     /* border-block: 1px rgb(212, 212, 212) solid; */
     padding-block: 1rem;
@@ -71,6 +93,7 @@ body{
     font-weight: 200;
     line-height: 1.2;
     text-transform: capitalize;
+    /* text-shadow: ; */
   }
 
   @media (max-width: 768px) {
@@ -165,7 +188,7 @@ body{
 .section2{
   margin-block: 2rem;
   min-height: 60vh;
-  background-image: url('/images/2ndbanner.jpg');
+  background-image: url('/images/secondslide1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
