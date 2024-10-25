@@ -194,8 +194,8 @@ html{
 
 .section2{
   margin-block: 2rem;
-  min-height: 60vh;
-  background-image: url('/images/secondslide1.jpg');
+  min-height: 70vh;
+  background-image: url('/images/secondslide3.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
